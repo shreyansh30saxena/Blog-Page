@@ -1,0 +1,904 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+	<head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="/assets/plugins/revo-slider/css/settings.css" rel="stylesheet" type="text/css"/>
+<link href="/assets/plugins/owl-carousel/owl.carousel.css" rel="stylesheet" type="text/css"/>
+<link href="/assets/plugins/owl-carousel/owl.theme.css" rel="stylesheet" type="text/css"/>
+<link href="/assets/plugins/owl-carousel/owl.transitions.css" rel="stylesheet" type="text/css"/>
+<link href="/assets/plugins/owl-carousel/styles.css" rel="stylesheet" type="text/css"/>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+        <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" crossorigin="anonymous"></script>
+        <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css" />
+
+<style>
+    body{margin-top:20px;}
+.blog-listing {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.gray-bg {
+    background-color: #f5f5f5;
+}
+a{
+    text-decoration: none;
+}
+/* Blog 
+---------------------*/
+.blog-grid {
+  box-shadow: 0 0 30px rgba(31, 45, 61, 0.125);
+  border-radius: 5px;
+  overflow: hidden;
+  background: #ffffff;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.blog-grid .blog-img {
+  position: relative;
+}
+.blog-grid .blog-img .date {
+  position: absolute;
+  background: #fc5356;
+  color: #ffffff;
+  padding: 8px 15px;
+  left: 10px;
+  top: 10px;
+  border-radius: 4px;
+}
+.blog-grid .blog-img .date span {
+  font-size: 22px;
+  display: block;
+  line-height: 22px;
+  font-weight: 700;
+}
+.blog-grid .blog-img .date label {
+  font-size: 14px;
+  margin: 0;
+}
+.blog-grid .blog-info {
+  padding: 20px;
+}
+.blog-grid .blog-info h5 {
+  font-size: 22px;
+  font-weight: 700;
+  margin: 0 0 10px;
+}
+.blog-grid .blog-info h5 a {
+  color: #20247b;
+}
+.blog-grid .blog-info p {
+  margin: 0;
+}
+.blog-grid .blog-info .btn-bar {
+  margin-top: 20px;
+}
+
+
+/* Blog Sidebar
+-------------------*/
+.blog-aside .widget {
+  box-shadow: 0 0 30px rgba(31, 45, 61, 0.125);
+  border-radius: 5px;
+  overflow: hidden;
+  background: #ffffff;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  width: 100%;
+  display: inline-block;
+  vertical-align: top;
+}
+.blog-aside .widget-body {
+  padding: 15px;
+}
+.blog-aside .widget-title {
+  padding: 15px;
+  border-bottom: 1px solid #eee;
+}
+.blog-aside .widget-title h3 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #fc5356;
+  margin: 0;
+}
+.blog-aside .widget-author .media {
+  margin-bottom: 15px;
+}
+.blog-aside .widget-author p {
+  font-size: 16px;
+  margin: 0;
+}
+.blog-aside .widget-author .avatar {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.blog-aside .widget-author h6 {
+  font-weight: 600;
+  color: #20247b;
+  font-size: 22px;
+  margin: 0;
+  padding-left: 20px;
+}
+.blog-aside .post-aside {
+  margin-bottom: 15px;
+}
+.blog-aside .post-aside .post-aside-title h5 {
+  margin: 0;
+}
+.blog-aside .post-aside .post-aside-title a {
+  font-size: 18px;
+  color: #20247b;
+  font-weight: 600;
+}
+.blog-aside .post-aside .post-aside-meta {
+  padding-bottom: 10px;
+}
+.blog-aside .post-aside .post-aside-meta a {
+  color: #6F8BA4;
+  font-size: 12px;
+  text-transform: uppercase;
+  display: inline-block;
+  margin-right: 10px;
+}
+.blog-aside .latest-post-aside + .latest-post-aside {
+  border-top: 1px solid #eee;
+  padding-top: 15px;
+  margin-top: 15px;
+}
+.blog-aside .latest-post-aside .lpa-right {
+  width: 90px;
+}
+.blog-aside .latest-post-aside .lpa-right img {
+  border-radius: 3px;
+  width : 100%;
+  height: 40px;
+}
+.blog-aside .latest-post-aside .lpa-left {
+  padding-right: 15px;
+}
+.blog-aside .latest-post-aside .lpa-title h5 {
+  margin: 0;
+  font-size: 15px;
+}
+.blog-aside .latest-post-aside .lpa-title a {
+  color: #20247b;
+  font-weight: 600;
+}
+.blog-aside .latest-post-aside .lpa-meta a {
+  color: #6F8BA4;
+  font-size: 12px;
+  text-transform: uppercase;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.tag-cloud a {
+  padding: 4px 15px;
+  font-size: 13px;
+  color: #ffffff;
+  background: #20247b;
+  border-radius: 3px;
+  margin-right: 4px;
+  margin-bottom: 4px;
+}
+.tag-cloud a:hover {
+  background: #fc5356;
+}
+
+.blog-single {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.article {
+  box-shadow: 0 0 30px rgba(31, 45, 61, 0.125);
+  border-radius: 5px;
+  overflow: hidden;
+  background: #ffffff;
+  padding: 15px;
+  margin: 15px 0 30px;
+}
+.article .article-title {
+  padding: 15px 0 20px;
+  text-align : center;
+}
+.article .article-title h6 {
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.article .article-title h6 a {
+  text-transform: uppercase;
+  color: #fc5356;
+  border-bottom: 1px solid #fc5356;
+}
+.article .article-title h2 {
+  color: #20247b;
+  font-weight: 600;
+}
+.article .article-title .media {
+  padding-top: 15px;
+  border-bottom: 1px dashed #ddd;
+  padding-bottom: 20px;
+}
+.article .article-title .media .avatar {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.article .article-title .media .media-body {
+  padding-left: 8px;
+}
+.article .article-title .media .media-body label {
+  font-weight: 600;
+  color: #fc5356;
+  margin: 0;
+}
+.article .article-title .media .media-body span {
+  display: block;
+  font-size: 12px;
+}
+.article .article-content h1,
+.article .article-content h2,
+.article .article-content h3,
+.article .article-content h4,
+.article .article-content h5,
+.article .article-content h6 {
+  color: #20247b;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+.article .article-content blockquote {
+  max-width: 600px;
+  padding: 15px 0 30px 0;
+  margin: 0;
+}
+.article .article-content blockquote p {
+  font-size: 20px;
+  font-weight: 500;
+  color: #fc5356;
+  margin: 0;
+}
+.article .article-content blockquote .blockquote-footer {
+  color: #20247b;
+  font-size: 16px;
+}
+.article .article-content blockquote .blockquote-footer cite {
+  font-weight: 600;
+}
+.article .tag-cloud {
+  padding-top: 10px;
+}
+
+.article-comment {
+  box-shadow: 0 0 30px rgba(31, 45, 61, 0.125);
+  border-radius: 5px;
+  overflow: hidden;
+  background: #ffffff;
+  padding: 20px;
+}
+.article-comment h4 {
+  color: #20247b;
+  font-weight: 700;
+  margin-bottom: 25px;
+  font-size: 22px;
+}
+img {
+    max-width: 100%;
+}
+img {
+    vertical-align: middle;
+    border-style: none;
+}
+
+/* Contact Us
+---------------------*/
+.contact-name {
+  margin-bottom: 30px;
+}
+.contact-name h5 {
+  font-size: 22px;
+  color: #20247b;
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+.contact-name p {
+  font-size: 18px;
+  margin: 0;
+}
+
+.social-share a {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 50%;
+  color: #ffffff;
+  text-align: center;
+  margin-right: 10px;
+}
+.social-share .dribbble {
+  box-shadow: 0 8px 30px -4px rgba(234, 76, 137, 0.5);
+  background-color: #ea4c89;
+}
+.social-share .behance {
+  box-shadow: 0 8px 30px -4px rgba(0, 103, 255, 0.5);
+  background-color: #0067ff;
+}
+.social-share .linkedin {
+  box-shadow: 0 8px 30px -4px rgba(1, 119, 172, 0.5);
+  background-color: #0177ac;
+}
+
+.contact-form .form-control {
+  border: none;
+  border-bottom: 1px solid #20247b;
+  background: transparent;
+  border-radius: 0;
+  padding-left: 0;
+  box-shadow: none !important;
+}
+.contact-form .form-control:focus {
+  border-bottom: 1px solid #fc5356;
+}
+.contact-form .form-control.invalid {
+  border-bottom: 1px solid #ff0000;
+}
+.contact-form .send {
+  margin-top: 20px;
+}
+@media (max-width: 767px) {
+  .contact-form .send {
+    margin-bottom: 20px;
+  }
+}
+
+.section-title h2 {
+    font-weight: 700;
+    color: #20247b;
+    font-size: 45px;
+    margin: 0 0 15px;
+    border-left: 5px solid #fc5356;
+    padding-left: 15px;
+}
+.section-title {
+    padding-bottom: 45px;
+}
+.contact-form .send {
+    margin-top: 20px;
+}
+.px-btn {
+    padding: 0 50px 0 20px;
+    line-height: 60px;
+    position: relative;
+    display: inline-block;
+    color: #20247b;
+    background: none;
+    border: none;
+}
+.px-btn:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    border-radius: 30px;
+    background: transparent;
+    border: 1px solid rgba(252, 83, 86, 0.6);
+    border-right: 1px solid transparent;
+    -moz-transition: ease all 0.35s;
+    -o-transition: ease all 0.35s;
+    -webkit-transition: ease all 0.35s;
+    transition: ease all 0.35s;
+    width: 60px;
+    height: 60px;
+}
+.px-btn .arrow {
+    width: 13px;
+    height: 2px;
+    background: currentColor;
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    right: 25px;
+}
+.px-btn .arrow:after {
+    width: 8px;
+    height: 8px;
+    border-right: 2px solid currentColor;
+    border-top: 2px solid currentColor;
+    content: "";
+    position: absolute;
+    top: -3px;
+    right: 0;
+    display: inline-block;
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+</style>
+
+</head>
+<body>
+
+    <!-------------------------------------------------------------EDIT FROM HERE--------------------------------------------->
+
+<div class="blog-single gray-bg">
+        <div class="container">
+            <div class="row align-items-start">
+                <div class="col-lg-8 m-15px-tb">
+                    <article class="article">
+                        <div class="article-img">
+                            <img src="https://cache.careers360.mobi/media/presets/900X600/article_images/2021/6/30/shutterstock_1664708983.jpg" title="" alt="">
+                        </div>
+                        <div class="article-title">
+
+                                <!---------------------H (means heading) Copy paste this whenever needed---------------------------->
+                           
+                            <h2>Exam Fear- Overcome Exam Fear, Exam Tips For Students</h2>
+ 
+                                 <!-------------------------------End of Heading--------------------->
+                           
+                        </div>
+                        <div class="article-content">
+                            <p>Exam fear or exam stress can not be removed but can be reduced. As a student fear can block your mind and capability to
+                                perform in situations. But you can learn to overcome your exam fear
+                                and with time and practice, you can do better. Exam fear is something that everyone faces less or more.</p>
+                        
+                                <!---------------------H (means heading) Copy paste this whenever needed---------------------------->
+                                
+                                <h4>Know Education</h4>
+
+                                <!-------------------------------End of Heading--------------------->
+
+                            <p>Learning is not in terms of mugging books but learning the art, skills, values, habits, numbers, and science. Understand the
+                                context of your learning. For a good outcome, a smart process and a strategy are necessary.
+                                When we do not know about something or are unaware of something we fear it.</p>
+
+
+                            <!--------FOR IMAGE, IF YOU WANT TO ADD MORE IMAGE JUST COPY PASTE THIS PART------>
+
+                         <div class="article-img">
+                            <img src="https://cache.careers360.mobi/media/presets/900X600/article_images/2021/6/30/shutterstock_1664708983.jpg" title="" alt="">
+                        </div>
+                        <!--------------------------------END OF IMAGE SECTION----------------------------------------------->
+
+                            <p>Exam fear or exam stress can not be removed but can be reduced. As a student fear can block your mind and capability to
+                                perform in situations. But you can learn to overcome your exam fear
+                                and with time and practice, you can do better. Exam fear is something that everyone faces less or more.</p>
+
+
+                            <h4>Know Education</h4>
+
+                            
+                            <p>Learning is not in terms of mugging books but learning the art, skills, values, habits, numbers, and science. Understand the
+                                context of your learning. For a good outcome, a smart process and a strategy are necessary.
+                                When we do not know about something or are unaware of something we fear it.</p>
+
+                            <!--------FOR IMAGE, IF YOU WANT TO ADD MORE IMAGE JUST COPY PASTE THIS PART------>
+                               
+                         <div class="article-img">
+                            <img src="https://cache.careers360.mobi/media/presets/900X600/article_images/2021/6/30/shutterstock_1664708983.jpg" title="" alt="">
+                        </div>      
+                            <!--------------------------------END OF IMAGE SECTION----------------------------------------------->                                              
+                        </div>
+
+
+
+
+
+
+<!-----XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+    -----------------------------------------------------------------Don't Edit Below This---------------------------------------------------------------------------------------
+    XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX------>
+    
+    
+                        <div class="nav tag-cloud">
+                            <a href="https://www.careerguide.com/career/design">Design</a>
+                            <a href="https://www.careerguide.com/career/data-analyst">Data Analyst</a>
+                            <a href="https://www.careerguide.com/career/e-learning-platforms">E-Learning Platforms</a>
+                            <a href="https://www.careerguide.com/career/abroad-colleges">Abroad Colleges</a>
+                            <a href="https://www.careerguide.com/career/career-counselling">Career Counselling</a>
+                            <a href="https://www.careerguide.com/career/study-abroad/study-abroad-study-abroad">Study Abroad</a>
+                            <a href="https://www.careerguide.com/career/study-abroad/government-jobs">Government Jobs</a>
+                        </div>
+                    </article>
+
+                </div>
+
+
+
+
+<!----------------------------------------------------------------Start of sidebar------------------------------------------------------------------------------------>
+
+                <div class="col-lg-4 m-15px-tb blog-aside">
+
+                    <div class="widget widget-latest-post">
+                        <div class="widget-title">
+                            <h3>Top Posts</h3>
+                        </div>
+                        <div class="widget-body">
+                            <div class="latest-post-aside media">
+                                <div class="lpa-left media-body">
+                                    <div class="lpa-title">
+                                        <h5><a href="https://www.careerguide.com/ask/t/what-are-the-career-options-after-12th-with-pcm">What are the Career Options After 12th With PCM</a></h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="latest-post-aside media">
+                                <div class="lpa-left media-body">
+                                    <div class="lpa-title">
+                                        <h5><a href="https://www.careerguide.com/ask/t/i-am-confused-about-which-group-to-take-in-11th">I am Confused About Which Group to Take In 11th</a></h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="latest-post-aside media">
+                                <div class="lpa-left media-body">
+                                    <div class="lpa-title">
+                                        <h5><a href="https://www.careerguide.com/ask/t/i-m-a-biology-student-can-i-apply-for-nda">I am a Biology Student Can I Apply for NDA</a></h5>
+                                    </div>
+                                </div>
+                            </div>
+                              <div class="latest-post-aside media">
+                                <div class="lpa-left media-body">
+                                    <div class="lpa-title">
+                                        <h5><a href="https://www.careerguide.com/ask/t/how-can-girls-join-in-indian-air-force-or-army-after-12th">How Can Girls Join In Indian Air Force or Army After 12th</a></h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="latest-post-aside media">
+                                <div class="lpa-left media-body">
+                                    <div class="lpa-title">
+                                        <h5><a href="https://www.careerguide.com/ask/t/professional-courses-after-12th-for-bio-maths-students">Professional Courses After 12th for Bio Maths Students</a></h5>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="latest-post-aside media">
+                                <div class="lpa-left media-body">
+                                    <div class="lpa-title">
+                                        <h5><a href="https://www.careerguide.com/ask/t/what-type-of-questions-are-asked-in-the-entrance-exams">What Type of Questions are Asked in the Entrance Exams</a></h5>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="latest-post-aside media">
+                                <div class="lpa-left media-body">
+                                    <div class="lpa-title">
+                                        <h5><a href="https://www.careerguide.com/ask/t/what-are-the-career-option-after-class-12th-non-medical">What are the Career Option After Class 12th Non Medical</a></h5>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="latest-post-aside media">
+                                <div class="lpa-left media-body">
+                                    <div class="lpa-title">
+                                        <h5><a href="https://www.careerguide.com/ask/t/i-want-to-know-about-the-best-career-option-after-10th">I Want to Know About the Best Career Option After 10th</a></h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="latest-post-aside media">
+                                <div class="lpa-left media-body">
+                                    <div class="lpa-title">
+                                        <h5><a href="https://www.careerguide.com/ask/t/opportunities-for-ugc-net-lectureship-in-commerce">Opportunities For UGC Net Lectureship in Commerce</a></h5>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="latest-post-aside media">
+                                <div class="lpa-left media-body">
+                                    <div class="lpa-title">
+                                        <h5><a href="https://www.careerguide.com/ask/t/what-are-the-future-prospects-of-msc-in-bioinformatics">What Are The Future Prospects of M.Sc in Bioinformatics</a></h5>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="latest-post-aside media">
+                                <div class="lpa-left media-body">
+                                    <div class="lpa-title">
+                                        <h5><a href="http://www.careerguide.com/career/online-career-counselling/counseling-for-10th/6-steps-become-a-doctor-after-class-10th">6 Steps Become a Doctor After Class 10th</a></h5>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="latest-post-aside media">
+                                <div class="lpa-left media-body">
+                                    <div class="lpa-title">
+                                        <h5><a href="http://www.careerguide.com/career/psychology/types-of-human-behavior-in-psychology">Types of Human Behavior in Psychology</a></h5>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="latest-post-aside media">
+                                <div class="lpa-left media-body">
+                                    <div class="lpa-title">
+                                        <h5><a href="http://www.careerguide.com/career/college/top-10-architecture-universities-in-the-philippines">Top 10 Architecture Universities in the Philippines</a></h5>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="latest-post-aside media">
+                                <div class="lpa-left media-body">
+                                    <div class="lpa-title">
+                                        <h5><a href="http://www.careerguide.com/career/exams/competitive-exams/all-about-the-icrb-examination">All About the ICRB Examination</a></h5>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="latest-post-aside media">
+                                <div class="lpa-left media-body">
+                                    <div class="lpa-title">
+                                        <h5><a href="http://www.careerguide.com/career/career-options/10-essential-qualities-to-become-a-scientist">10 Essential Qualities To Become a Scientist</a></h5>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="latest-post-aside media">
+                                <div class="lpa-left media-body">
+                                    <div class="lpa-title">
+                                        <h5><a href="http://www.careerguide.com/career/online-exams/online-exams-advantages-and-disadvantages">Online Exams Advantages and Disadvantages</a></h5>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="latest-post-aside media">
+                                <div class="lpa-left media-body">
+                                    <div class="lpa-title">
+                                        <h5><a href="http://www.careerguide.com/career/psychology/types-of-human-behavior-in-psychology">Types of Human Behavior in Psychology</a></h5>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="latest-post-aside media">
+                                <div class="lpa-left media-body">
+                                    <div class="lpa-title">
+                                        <h5><a href="http://www.careerguide.com/career/right-career/pros-and-cons-of-becoming-a-professor">Pros and Cons of Becoming a Professor</a></h5>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="latest-post-aside media">
+                                <div class="lpa-left media-body">
+                                    <div class="lpa-title">
+                                        <h5><a href="http://www.careerguide.com/career/working-professionals/8-benefits-of-workplace-ethics">8 Benefits Of Workplace Ethics</a></h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="latest-post-aside media">
+                                <div class="lpa-left media-body">
+                                    <div class="lpa-title">
+                                        <h5><a href="https://institute.careerguide.com/best-colleges-to-pursue-psychology-in-india/">Best Colleges to Pursue Psychology in India</a></h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="latest-post-aside media">
+                                <div class="lpa-left media-body">
+                                    <div class="lpa-title">
+                                        <h5><a href="https://institute.careerguide.com/top-11-interior-designing-colleges-in-india/">Top 11 Interior Designing Colleges in India</a></h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="latest-post-aside media">
+                                <div class="lpa-left media-body">
+                                    <div class="lpa-title">
+                                        <h5><a href="https://institute.careerguide.com/best-colleges-to-pursue-masters-in-economics-in-india/">Best Colleges to Pursue Masters in Economics in India</a></h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="latest-post-aside media">
+                                <div class="lpa-left media-body">
+                                    <div class="lpa-title">
+                                        <h5><a href="https://institute.careerguide.com/11-popular-bartending-colleges-among-students-in-india/">11 Popular Bartending Colleges Among Students in India</a></h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+            </div>
+
+                <!-------------------------------------------------------start of first lower bar------------------------------------------------------->
+
+                <div class="col-lg-4 m-15px-tb blog-aside">
+
+                    <div class="widget widget-latest-post">
+                        <div class="widget-title">
+                            <h3>Career Articles</h3>
+                        </div>
+                        <div class="widget-body">
+                            <div class="latest-post-aside media">
+                                <div class="lpa-left media-body">
+                                    <div class="lpa-title">
+                                        <h5><a href="http://www.careerguide.com/career/online-career-counselling/counseling-for-10th/career-steps-to-become-a-lawyer-after-class-10th">Career Steps To Become a Lawyer After Class 10th</a></h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="latest-post-aside media">
+                                <div class="lpa-left media-body">
+                                    <div class="lpa-title">
+                                        <h5><a href="http://www.careerguide.com/career/engineering/15-facts-about-chemical-engineering">15 Facts About Chemical Engineering</a></h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="latest-post-aside media">
+                                <div class="lpa-left media-body">
+                                    <div class="lpa-title">
+                                        <h5><a href="http://www.careerguide.com/career/online-exams/online-exams-advantages-and-disadvantages">Online Exams Advantages and Disadvantages</a></h5>
+                                    </div>
+                                </div>
+                            </div>
+                             <div class="latest-post-aside media">
+                                <div class="lpa-left media-body">
+                                    <div class="lpa-title">
+                                        <h5><a href="http://www.careerguide.com/career/exams/competitive-exams/all-about-the-icrb-examination">All About the ICRB Examination</a></h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="latest-post-aside media">
+                                <div class="lpa-left media-body">
+                                    <div class="lpa-title">
+                                        <h5><a href="http://www.careerguide.com/career/college-in-india/top-8-colleges-in-north-east-india">Top 8 Colleges in North East India</a></h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="latest-post-aside media">
+                                <div class="lpa-left media-body">
+                                    <div class="lpa-title">
+                                        <h5><a href="http://www.careerguide.com/career/working-professionals/7-steps-to-become-a-raw-agent">7 Steps to Become a Raw Agent</a></h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="latest-post-aside media">
+                                <div class="lpa-left media-body">
+                                    <div class="lpa-title">
+                                        <h5><a href="http://www.careerguide.com/career/online-career-counselling/10-questions-you-should-ask-your-career-counselor">10 Questions You Should Ask Your Career Counselor</a></h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+            </div>
+
+                <!------------------------------------------------start of second lower bar---------------------------------------------------------------->
+
+                                <div class="col-lg-4 m-15px-tb blog-aside">
+
+                    <div class="widget widget-latest-post">
+                        <div class="widget-title">
+                            <h3>Institution Articles</h3>
+                        </div>
+                        <div class="widget-body">
+                            <div class="latest-post-aside media">
+                                <div class="lpa-left media-body">
+                                    <div class="lpa-title">
+                                        <h5><a href="https://institute.careerguide.com/renounce-worldwide-colleges-for-mba-in-human-resource/">Renounce Worldwide Colleges for MBA in Human Resource</a></h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="latest-post-aside media">
+                                <div class="lpa-left media-body">
+                                    <div class="lpa-title">
+                                        <h5><a href="https://institute.careerguide.com/top-10-humanities-colleges-in-india/">Top 10 Humanities Colleges in India</a></h5>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="latest-post-aside media">
+                                <div class="lpa-left media-body">
+                                    <div class="lpa-title">
+                                        <h5><a href="https://institute.careerguide.com/top-10-mba-colleges-in-uk/">Top 10 MBA Colleges in UK</a></h5>
+                                    </div>
+                                </div>
+                            </div>
+                               <div class="latest-post-aside media">
+                                <div class="lpa-left media-body">
+                                    <div class="lpa-title">
+                                        <h5><a href="https://institute.careerguide.com/top-10-engineering-colleges-in-the-usa/">Top 10 Engineering Colleges in the USA</a></h5>
+                                    </div>
+                                </div>
+                            </div>
+                               <div class="latest-post-aside media">
+                                <div class="lpa-left media-body">
+                                    <div class="lpa-title">
+                                        <h5><a href="https://institute.careerguide.com/top-10-for-b-e-colleges-in-tamil-nadu/">Top 10 Colleges for BE in Tamil Nadu</a></h5>
+                                    </div>
+                                </div>
+                            </div>
+                              <div class="latest-post-aside media">
+                                <div class="lpa-left media-body">
+                                    <div class="lpa-title">
+                                        <h5><a href="https://institute.careerguide.com/best-colleges-to-pursue-b-ed-in-india/">Best Colleges to Pursue B.Ed in India</a></h5>
+                                    </div>
+                                </div>
+                            </div>
+                              <div class="latest-post-aside media">
+                                <div class="lpa-left media-body">
+                                    <div class="lpa-title">
+                                        <h5><a href="https://institute.careerguide.com/top-14-best-nursing-colleges-in-india/">Top 14 Best Nursing Colleges in India</a></h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+            </div>
+                <!-----------------------------------------------------Start of third lower bar---------------------------------------------------->
+
+                                <div class="col-lg-4 m-15px-tb blog-aside">
+
+                    <div class="widget widget-latest-post">
+                        <div class="widget-title">
+                            <h3>Popular Services of CareerGuide</h3>
+                        </div>
+                        <div class="widget-body">
+                            <div class="latest-post-aside media">
+                                <div class="lpa-left media-body">
+                                    <div class="lpa-title">
+                                        <h5><a href="https://www.careerguide.com/career/career-counselling-for-10th-class">Counselling Services for Class 10 Students</a></h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="latest-post-aside media">
+                                <div class="lpa-left media-body">
+                                    <div class="lpa-title">
+                                        <h5><a href="https://www.careerguide.com/career/career-counselling-for-12th-class">Counselling Services for Class 12 Students</a></h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="latest-post-aside media">
+                                <div class="lpa-left media-body">
+                                    <div class="lpa-title">
+                                        <h5><a href="https://www.careerguide.com/career/career-counselling-services-for-masters-2">Counselling Services for Graduates & Post Graduates</a></h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="latest-post-aside media">
+                                <div class="lpa-left media-body">
+                                    <div class="lpa-title">
+                                        <h5><a href="https://www.careerguide.com/career/career-counselling-services-for-working-professionals">Counselling Services for Working Professionals</a></h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="latest-post-aside media">
+                                <div class="lpa-left media-body">
+                                    <div class="lpa-title">
+                                        <h5><a href="https://www.careerguide.com/career/resume-professional-review">Resume Review & Creation</a></h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="latest-post-aside media">
+                                <div class="lpa-left media-body">
+                                    <div class="lpa-title">
+                                        <h5><a href="https://www.careerguide.com/career/linkedin-resume-review-services">LinkedIn Profile & Review</a></h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="latest-post-aside media">
+                                <div class="lpa-left media-body">
+                                    <div class="lpa-title">
+                                        <h5><a href="https://www.careerguide.com/career/become-a-master-career-guide">Become a Certified Career Counsellor</a></h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+            </div>
+                <!-----------------------------------------------------End of third lower bar------------------------------------------------------->
+
+        </div>
+    </div>
+</body>
+</html>
